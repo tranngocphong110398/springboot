@@ -13,7 +13,7 @@ import java.util.List;
 @Controller
 public class ProductController {
 
-    @Autowired
+  /*  @Autowired
     private ProductService productService;
 
     @GetMapping(value = "/products/{id}")
@@ -21,5 +21,5 @@ public class ProductController {
         List<Product> products = productService.findProductsByCategoryId(id);
         model.addAttribute("products",products);
         return "list-products";
-    }
+    }*/
 }

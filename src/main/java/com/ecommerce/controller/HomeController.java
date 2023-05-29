@@ -10,9 +10,13 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
     @RequestMapping(value = {"/","index"},method = RequestMethod.GET)
-    public ModelAndView homePage(){
-        ModelAndView mv = new ModelAndView("home");
-        return mv;
+    public String homePage(){
+        return "index";
+    }
+
+    @RequestMapping(value = {"/category"},method = RequestMethod.GET)
+    public String categoreis(){
+        return "category";
     }
 
 
